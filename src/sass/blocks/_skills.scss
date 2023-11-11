@@ -10,8 +10,11 @@
         gap: 13px;
     }
     &__item {
-        border: 1px solid black;
-        padding: 30px 30px 25px 30px;
+        border: 3px solid teal;
+        padding: 40px 40px 35px 40px;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
         &-img {
             display: flex;
             align-items: center;
@@ -27,6 +30,11 @@
             font-size: 12px;
             line-height: 18px;
         }
+    }
+    &__item:hover{
+        border-radius: 50%;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     &__ratings {
         margin-top: 120px;
