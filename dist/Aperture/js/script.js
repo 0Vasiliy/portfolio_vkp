@@ -76,7 +76,6 @@ mn.style.transform = `rotateZ(${mm}deg)`;
 sc.style.transform = `rotateZ(${ss}deg)`;
 })
 
-
 //Hamburger
 
 const hamb = document.querySelector('.hamburger');
@@ -94,6 +93,5 @@ const hamb = document.querySelector('.hamburger');
           menuList.classList.toggle('menu_list_active');
       })
   })
-
 })
 
