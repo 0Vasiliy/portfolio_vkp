@@ -33,6 +33,7 @@
 }
 html {
   font-size: 10px;
+  /* max-width: 1620px; */
 }
 body {
   font-family: 'Circe Regular', sans-serif;
@@ -70,6 +71,7 @@ h4 {
   display: block;
   margin: 0 auto;
   font-family: 'Circe Bold', sans-serif;
+  cursor: pointer;
 }
 .button-transparent {
   background-color: transparent;
@@ -77,6 +79,7 @@ h4 {
   padding: 1.5rem 2rem;
   color: #c51abb;
   border: 2px solid #c51abb;
+  cursor: pointer;
 }
 .button-transparent:before {
   content: '';
@@ -88,6 +91,7 @@ h4 {
   top: 3px;
   right: 2px;
   background-size: 100%;
+  cursor: pointer;
 }
 .button-order {
   background-image: linear-gradient(66deg, #a12ab1 0%, #c818bc 100%);
@@ -97,6 +101,7 @@ h4 {
   color: #ffffff;
   border: 2px solid #c51abb;
   background-color: transparent;
+  cursor: pointer;
 }
 .fixed-gift {
   position: fixed;
@@ -106,8 +111,15 @@ h4 {
   right: 2rem;
   cursor: pointer;
 }
+.feedback-slider{
+  position:relative;
+   height: 400px;
+} 
 .header .container {
   padding: 0;
+}
+.burger{
+  cursor: pointer;
 }
 .header .burger {
   margin-right: -1rem;
@@ -250,6 +262,12 @@ h4 {
 
   opacity: 0;
   cursor: pointer;
+}
+.sliders{
+  display: flex; 
+}
+.main-slider-item img{
+  max-width: 680px;
 }
 .main .file_upload > button {
   transition: background 0.2s;
@@ -1310,6 +1328,9 @@ h4 {
   }
 }
 @media (max-width: 1199px) {
+  .main-slider-item img{
+    max-width: 580px;
+  }
   .fixed-gift {
     display: none;
   }
@@ -1489,6 +1510,10 @@ h4 {
   .promo-2 img {
     left: -10%;
   }
+
+  .feedback-block img{
+    max-width: 300px;
+  }
   .feedback-heading {
     font-size: 2rem;
   }
@@ -1511,6 +1536,11 @@ h4 {
   .calc .button-transparent {
     margin: 4rem auto;
     width: auto;
+  }
+}
+@media (max-width: 800px){
+  .main-slider-item img{
+    max-width: 480px;
   }
 }
 @media (max-width: 767px) {
@@ -1573,6 +1603,15 @@ h4 {
   .feedback-heading {
     margin-top: 6rem;
   }
+  .feedback-block img{
+    max-width: 250px;
+  }
+  .feedback-slider{
+    height: auto;
+  } 
+  .feedback{
+    height: auto;
+  }
   .feedback .slick-slide img {
     left: 0;
     margin: 0 auto;
@@ -1595,6 +1634,7 @@ h4 {
     text-align: center;
   }
 }
+
 @media (max-width: 577px) {
   h2 {
     font-size: 3.5rem;
@@ -1752,4 +1792,16 @@ h4 {
     padding: 3rem 3rem;
     width: 25rem;
   }
+}
+
+@media (max-width: 450px){
+  .main-slider-item img{
+    max-width: 250px;
+  }
+}
+@media (max-width: 350px){
+  .main-slider-item img{
+    max-width: 200px;
+  }
+
 }
