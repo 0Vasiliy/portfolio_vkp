@@ -302,9 +302,29 @@
                                     <div class="resume__item-location">ООО"Ресурс-IT" | Москва (29.08.2022г-15.09.2023г)</div>
                                 </div>
                                 <p class="resume__item-body">
-                                    HTML, CSS (Flex, Grid), SASS/SCSS<br>Верстка по макету с Figma<br> Верстка по макету с Marsi(формат psd)<br>Адаптивная верстка<br>
-                                    Кроссбраузерная вёрстка<br>Gulp, Webpack<br>Git<br>JavaScript UpScroll, modal, sliders, button (нажатия, действия), Отправка формы данных на сайт, простая валидация<br>
-                                    JQuery (подключение slik-sliders)<br> Выкладывание проекта на хостинг<br>Создание и подключение favicon<br>Простые анимации<br>Работа с SVG<br>Vue.js (Vue-Cli,Components,VUE-Router,Validate,немного VUEX)
+                                    HTML, CSS, SCSS(Flex,Grid)<br>
+                                    Немного PHP<br>
+                                    Верстка по макету с Figma<br>
+                                    Верстка по макету с Marsi(формат psd)<br>
+                                    Pixel Perfect<br>
+                                    Адаптивная верстка<br>
+                                    Кроссбраузерная вёрстка<br>
+                                    Gulp, Webpack<br>
+                                    Git<br>
+                                    JavaScript -- UpScroll, modal, sliders, button (нажатия, действия), отправка формы на почту, валидация форм<br>
+                                    JQuery, slik-sliders, swiper-sliders<br>
+                                    Работал с Axios, Ajax<br>
+                                    Добавление Яндекс-метрики на сайт<br>
+                                    Выкладывание проекта на хостинг<br>
+                                    Вёрстка email писем<br>
+                                    Создание и подключение favicon<br>
+                                    Animate.css<br>
+                                    Базовый UX/UI<br>
+                                    Работа с SVG<br>
+                                    Chrome Dev Tools,<br>
+                                    Google Page Speed,<br>
+                                    Vue.js (Vue-Cli,Components,VUE-Router,Validate,Vue Emailjs, немного VUEX), формы с валидацией, модальные окна, лединги, многостраничные сайты.<br>
+                                    Работал с Firebase (Authentication), PhpMyAdmin (MySql)- отправка данных post / forms / email. <br>
                                 </p>
                             </div>
                         </li>
@@ -351,11 +371,11 @@
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
-                        <img src="icons/skills/vue.svg" alt="React">
+                        <img src="icons/skills/bootstrap.svg" alt="bootstrap">
                     </div>
-                    <h3 class="title title_fz14">VUE</h3>
-                    <p>Эта библиотека позволяет создавать бысьрые пользовательские интерфейсы на основе языка JavaScript</p>
-                </div>
+                    <h3 class="title title_fz14">Bootstrap</h3>
+                    <p>Этот фреймворк используется для создания интерактивных и адаптивных веб-приложений и веб-сайтов</p>
+                </div> 
                 <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/marsy.svg" alt="Marsi">
@@ -379,11 +399,32 @@
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
-                        <img src="icons/skills/bootstrap.svg" alt="bootstrap">
+                        <img src="icons/skills/vue.svg" alt="React">
                     </div>
-                    <h3 class="title title_fz14">Bootstrap</h3>
-                    <p>Этот фреймворк используется для создания интерактивных и адаптивных веб-приложений и веб-сайтов</p>
-                </div>   
+                    <h3 class="title title_fz14">VUE</h3>
+                    <p>Эта библиотека позволяет создавать бысьрые пользовательские интерфейсы на основе языка JavaScript</p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="icons/skills/axios.svg" alt="axios">
+                    </div>
+                    <h3 class="title title_fz14">Axios</h3>
+                    <p>Это библиотека JavaScript, которая позволяет делать HTTP-запросы. Она предоставляет простой и удобный интерфейс для выполнения запросов на сервер и обработки ответов.</p>
+                </div>  
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="icons/skills/emailjs.svg" alt="axios">
+                    </div>
+                    <h3 class="title title_fz14">Emailjs</h3>
+                    <p>Это сервис, который упрощает процесс отправки писем непосредственно из кода JavaScript на стороне клиента.</p>
+                </div> 
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="icons/skills/firebase.svg" alt="axios">
+                    </div>
+                    <h3 class="title title_fz14">Firebase</h3>
+                    <p>Это облачный сервис для разработки мобильных и веб-приложений.</p>
+                </div> 
             </div>
 
             <div class="skills__ratings">
@@ -518,7 +559,7 @@
                         Или оставьте ваши данные и я сам вам напишу:
                     </div>
 
-                    <form enctype="multipart/form-data" method="POST" class="contacts__form" id="form" onsubmit="send(event, 'send.php')">
+                    <form enctype="multipart/form-data"class="contacts__form" id="form">
                         <div class="contacts__input">
                             <input required name="name" id="name" type="text" class="clear">
                             <label for="name">Ваше имя</label>
@@ -529,11 +570,11 @@
                         </div>
 
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text" class="clear"></textarea>
+                            <textarea required name="text" id="text" class="clear"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">
-                            <button type="submit" class="contacts__btn btn" id="btn_contact">Отправить сообщение</button>
+                            <button type="submit" class="contacts__btn btn" id="btn_contact" onclick="sendMail();">Отправить сообщение</button>
                             <div class="contacts__policy">
                                 <input required type="checkbox">
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
@@ -556,7 +597,16 @@
     <a href="#up" class="pageup">
         <img src="./icons/pageup/up.svg" alt="up">
     </a>  
-    
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+     <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "***************",
+        });
+        })();
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script src="js/form.js"></script>
