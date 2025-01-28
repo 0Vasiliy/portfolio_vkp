@@ -7,6 +7,14 @@
     .container {
         max-width: 960px;
     }
+    .modal {
+        position: relative;
+        top: 30%;     
+        left: 0;
+        width: 280px;
+        margin-right: auto;
+        margin-left: auto;  
+    }
     .about {
         &__wrapper {
             grid-template-columns: 400px 520px;
@@ -289,5 +297,9 @@
             margin: 0 auto;
             line-height: 18px;
         }
+    }
+    .modal__close{
+        top: -30px;
+        right: -30px;
     }
 }
